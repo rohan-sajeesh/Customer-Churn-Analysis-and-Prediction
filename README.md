@@ -2,7 +2,7 @@
 
 Machine learning project predicting customer churn using customer behaviour and service data. Includes data preprocessing, exploratory analysis, feature engineering and classification modelling.
 
----
+---  
 
 ## Overview
 Customer churn is a major challenge for businesses, particularly in industries such as telecommunications, banking, and subscription services, where retaining existing customers is often more cost-effective than acquiring new ones.
@@ -95,6 +95,40 @@ Key features include:
 - Git/GitHub
 
 ---
+## Repository Structure
+
+```text
+Customer-Churn-Analysis-and-Prediction/
+│
+├── data/
+│   └── README.md
+│       Dataset information, feature descriptions and preprocessing summary
+│
+├── notebooks/
+│   ├── customer_churn_data_preprocessing.ipynb
+│   │   Data cleaning and preprocessing
+│   │
+│   ├── Customer_Churn_EDA_Notebook_Rohan_Sajeesh.ipynb
+│   │   Exploratory data analysis and business insights
+│   │
+│   ├── Feature Engineering and Machine Learning Modelling (1).ipynb
+│   │   Feature engineering, model training, evaluation and interpretation
+│   │
+│   └── README.md
+│       Notebook workflow documentation
+│
+├── report/
+│   ├── Customer_Churn_EDA_Report_Rohan_Sajeesh.pdf
+│   │   Exploratory analysis milestone report
+│   │
+│   ├── Customer_Churn_Final_Report_Rohan_Sajeesh.pdf
+│   │   Final end-to-end data science report
+│   │
+│   └── README.md
+│
+├── .gitignore
+├── LICENSE
+└── README.md
 
 ## Project Workflow
 
