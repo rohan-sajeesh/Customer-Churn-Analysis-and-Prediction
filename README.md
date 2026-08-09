@@ -129,7 +129,8 @@ Customer-Churn-Analysis-and-Prediction/
 ├── .gitignore
 ├── LICENSE
 └── README.md
-'''
+
+```
 ## Project Workflow
 
 ### 1. Data Preparation
@@ -143,7 +144,7 @@ Completed:
 - Processed categorical variables
 - Prepared features for modelling
 - Created training and testing datasets
-```
+
 ---
 
 ### 2. Exploratory Data Analysis
