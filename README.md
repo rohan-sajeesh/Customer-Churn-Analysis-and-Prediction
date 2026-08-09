@@ -171,16 +171,19 @@ Visualisations include:
 
 ### 3. Machine Learning Modelling
 
-Classification models will be developed and compared.
+Five classification models were trained and compared using a stratified 80/20 train-test split.
 
 Models:
 
-| Model | Purpose |
-|---|---|
-| Logistic Regression | Baseline classification model |
-| Decision Tree | Interpretable decision rules |
-| Random Forest | Ensemble learning approach |
-| Gradient Boosting | Improved predictive performance |
+| Model               | Purpose / Role                         |
+| ------------------- | -------------------------------------- |
+| Logistic Regression | Interpretable linear baseline          |
+| Decision Tree       | Non-linear rule-based model            |
+| Random Forest       | Ensemble learning approach             |
+| Gradient Boosting   | Sequential boosted-tree model          |
+| XGBoost             | Regularised boosted-tree model         |
+
+Because the dataset was imbalanced, with approximately 9.92% of customers classified as churned, model performance was evaluated using metrics beyond accuracy. :contentReference[oaicite:1]{index=1}
 
 Evaluation metrics:
 
@@ -189,6 +192,20 @@ Evaluation metrics:
 - Recall
 - F1-score
 - ROC-AUC
+
+### Model Performance
+
+| Model               | Accuracy | Precision | Recall | F1-score | ROC-AUC |
+| ------------------- | -------- | --------- | ------ | -------- | ------- |
+| XGBoost             | 62.76%   | 15.85%    | 63.91% | 25.40%   | 0.6850  |
+| Logistic Regression | 62.76%   | 15.86%    | 63.95% | 25.42%   | 0.6849  |
+| Gradient Boosting   | 61.30%   | 15.49%    | 65.05% | 25.02%   | 0.6808  |
+| Random Forest       | 64.18%   | 15.90%    | 60.86% | 25.21%   | 0.6776  |
+| Decision Tree       | 60.67%   | 15.14%    | 64.32% | 24.51%   | 0.6704  |
+
+XGBoost achieved the highest ROC-AUC at **0.6850**, while Gradient Boosting achieved the highest recall at **65.05%**. Logistic Regression performed almost identically to XGBoost, indicating that additional model complexity produced only limited gains with the available feature set. :contentReference[oaicite:2]{index=2}
+
+XGBoost was selected as the final model for interpretation because it achieved the highest ROC-AUC. The model identified contract type, customer satisfaction, complaint history, technical support, service calls, online security, number of services and late payments as the strongest predictors of churn. :contentReference[oaicite:3]{index=3}
 
 ---
 
