@@ -203,9 +203,9 @@ Evaluation metrics:
 | Random Forest       | 64.18%   | 15.90%    | 60.86% | 25.21%   | 0.6776  |
 | Decision Tree       | 60.67%   | 15.14%    | 64.32% | 24.51%   | 0.6704  |
 
-XGBoost achieved the highest ROC-AUC at **0.6850**, while Gradient Boosting achieved the highest recall at **65.05%**. Logistic Regression performed almost identically to XGBoost, indicating that additional model complexity produced only limited gains with the available feature set. :contentReference[oaicite:2]{index=2}
+XGBoost achieved the highest ROC-AUC at **0.6850**, while Gradient Boosting achieved the highest recall at **65.05%**. Logistic Regression performed almost identically to XGBoost, indicating that additional model complexity produced only limited gains with the available feature set.
 
-XGBoost was selected as the final model for interpretation because it achieved the highest ROC-AUC. The model identified contract type, customer satisfaction, complaint history, technical support, service calls, online security, number of services and late payments as the strongest predictors of churn. :contentReference[oaicite:3]{index=3}
+XGBoost was selected as the final model for interpretation because it achieved the highest ROC-AUC. The model identified contract type, customer satisfaction, complaint history, technical support, service calls, online security, number of services and late payments as the strongest predictors of churn.
 
 ---
 
