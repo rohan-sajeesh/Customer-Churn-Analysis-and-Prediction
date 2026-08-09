@@ -88,6 +88,7 @@ Key features include:
 - Decision Tree
 - Random Forest
 - Gradient Boosting
+- XGBoost
 
 **Development**
 
@@ -219,11 +220,13 @@ This project is complete. All stages of the data science workflow — data prepa
 
 Potential extensions include:
 
-- Hyperparameter optimisation
+- Threshold optimisation using retention costs and customer value
+- Precision-recall analysis for improved evaluation under class imbalance
+- Cross-validation and separate validation data for model selection
 - Explainable AI techniques such as SHAP
-- Deployment using Flask or Streamlit
-- Real-time churn prediction pipeline
-- Testing on additional customer datasets
+- Deployment-safe preprocessing using scikit-learn pipelines
+- Interaction feature engineering
+- Temporal validation and testing on real or independent datasets
 
 ---
 
