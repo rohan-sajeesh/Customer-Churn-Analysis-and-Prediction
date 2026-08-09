@@ -183,7 +183,7 @@ Models:
 | Gradient Boosting   | Sequential boosted-tree model          |
 | XGBoost             | Regularised boosted-tree model         |
 
-Because the dataset was imbalanced, with approximately 9.92% of customers classified as churned, model performance was evaluated using metrics beyond accuracy. :contentReference[oaicite:1]{index=1}
+Because the dataset was imbalanced, with approximately 9.92% of customers classified as churned, model performance was evaluated using metrics beyond accuracy. 
 
 Evaluation metrics:
 
